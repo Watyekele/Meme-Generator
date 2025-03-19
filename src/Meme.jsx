@@ -34,7 +34,7 @@ export default function Meme(props) {
               Top text
               <input
                 type="text"
-                className="first w-[80%]  border border-white indent-2 text-left"
+                className="first w-[80%]  border border-white indent-2 text-left rounded-sm opacity-[50%]"
                 placeholder="SHUT UP!"
                 value={items.topText}
                 name="topText"
@@ -45,7 +45,7 @@ export default function Meme(props) {
               Bottom text
               <input
                 type="text"
-                className="second w-[80%] border indent-2  "
+                className="second w-[80%] border indent-2 rounded-sm opacity-[50%] "
                 name="bottomText"
                 placeholder="AND TAKE MY MONEY"
                 value={items.bottomText}
@@ -69,10 +69,10 @@ export default function Meme(props) {
             alt=""
             className="image max-w-full max-h-full object-cover h-auto rounded-md"
           />
-          <span className="top absolute  text-2xl top-0 px-4 font-bold shadow-md ">
+          <span className="top absolute  text-2xl top-0 px-4 font-bold shadow-md font-serif ">
             {items.topText}
           </span>
-          <span className="bottom absolute  text-2xl bottom-0 px-4 font-bold shadow-md">
+          <span className="bottom absolute  text-2xl bottom-0 px-4 font-bold shadow-md font-serif ">
             {items.bottomText}
           </span>
         </section>

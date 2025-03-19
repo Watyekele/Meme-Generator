@@ -41,7 +41,7 @@ function App(props) {
   // }, [count]);
 
   return (
-    <div className="Meme-poster  w-full max-w-md m-auto text-white border-2 border-white rounded-md  my-4">
+    <div className="Meme-poster  w-full max-w-sm m-auto text-white border-2 border-white rounded-md  my-4">
       <Header />
       <Meme image={getImages} handleClick={fetchMeme} />
       {/* <button
