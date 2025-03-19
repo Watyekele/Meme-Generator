@@ -55,14 +55,19 @@ export default function Meme(props) {
           </section>
 
           <section>
-            <button onClick={props.handleClick}>Get a new meme image 🖼</button>
+            <button
+              onClick={props.handleClick}
+              className="bg-gradient-to-r from-[#672280] to-[#a626d3] p-1 rounded-sm mt-2 cursor-pointer hover:opacity-80 transition duration-300 "
+            >
+              Get a new meme image 🖼
+            </button>
           </section>
         </section>
         <section className="meme flex flex-col relative items-center justify-center w-2xs overflow-hidden h-3/4 m-auto mt-4 mb-4 ">
           <img
             src={items.image}
             alt=""
-            className="image max-w-full max-h-full object-cover"
+            className="image max-w-full max-h-full object-cover h-auto"
           />
           <span className="top absolute  text-2xl top-0 px-4">
             {items.topText}
