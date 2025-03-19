@@ -67,12 +67,12 @@ export default function Meme(props) {
           <img
             src={items.image}
             alt=""
-            className="image max-w-full max-h-full object-cover h-auto"
+            className="image max-w-full max-h-full object-cover h-auto rounded-md"
           />
-          <span className="top absolute  text-2xl top-0 px-4">
+          <span className="top absolute  text-2xl top-0 px-4 font-bold shadow-md ">
             {items.topText}
           </span>
-          <span className="bottom absolute  text-2xl bottom-0 px-4 ">
+          <span className="bottom absolute  text-2xl bottom-0 px-4 font-bold shadow-md">
             {items.bottomText}
           </span>
         </section>
