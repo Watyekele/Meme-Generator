@@ -3,7 +3,7 @@ import { useEffect } from "react";
 
 export default function Meme(props) {
   const [items, setItems] = useState({
-    topText: "SHUT UP!",
+    topText: "KEEP CALM!",
     bottomText: "AND TAKE MY MONEY",
 
     image: props.image,
@@ -35,7 +35,7 @@ export default function Meme(props) {
               <input
                 type="text"
                 className="first w-[80%]  border border-white indent-2 text-left rounded-sm opacity-[50%]"
-                placeholder="SHUT UP!"
+                placeholder="KEEP CALM!"
                 value={items.topText}
                 name="topText"
                 onChange={handleChange}
@@ -72,7 +72,7 @@ export default function Meme(props) {
           <span className="top absolute  text-2xl top-0 px-4 font-bold shadow-md font-serif ">
             {items.topText}
           </span>
-          <span className="bottom absolute  text-2xl bottom-0 px-4 font-bold shadow-md font-serif ">
+          <span className="bottom absolute  text-2xl bottom-0 px-4 font-bold shadow-md font-serif uppercase ">
             {items.bottomText}
           </span>
         </section>
